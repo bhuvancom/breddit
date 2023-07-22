@@ -1,0 +1,38 @@
+server:
+  port: 8081
+spring:
+  mvc:
+    cors:
+      allowed-origins: "*"
+      allowed-methods: "*"
+      allowed-headers: "*"
+  jackson:
+    serialization:
+      FAIL_ON_EMPTY_BEANS: false
+  application:
+    name: breddit-main
+  datasource:
+    url: "jdbc:mysql://localhost:3306/spring-breddit?useSSL=false"
+    username: root
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+jwt:
+  expiration:
+    time: 36
+swagger:
+  api:
+    title: BReddit API
+    description: B-Reddit clone
+    version: 1.0.0
+    contact:
+      name: Bhuvaneshvar
+      url: bhuvancom.github.io
+      email: bhuvancom@oulook.com
+  auth:
+    enabled: true

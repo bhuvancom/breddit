@@ -1,4 +1,4 @@
-package com.bhvan.breddit;
+package com.bhuvancom.breddit;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
